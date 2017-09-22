@@ -20,21 +20,22 @@
 
 </ul>
 </p><br/>
-<p>======================================================</p>
-  
-function diffArray(arr1, arr2) {
-  var newArr = [];
-  // Same, same; but different.
-  newArr= arr1.concat(arr2);
-  var diffarray= newArr.filter(function(x){
+<p>======================================================</p>  
     
-    if(arr1.indexOf(x)<0 || arr2.indexOf(x)<0)
-      {
-        return x;
-      }
+function diffArray(arr1, arr2) {  
+  var newArr = [];  
+  // Same, same; but different.  
+  newArr= arr1.concat(arr2);  
+  var diffarray= newArr.filter(function(x){  
+      
+    if(arr1.indexOf(x)<0 || arr2.indexOf(x)<0)  
+      {  
+        return x;  
+      }  
     
-  });
-  
-  return diffarray;
-}  
-diffArray(arr1, arr2);  
+  });  
+    
+  return diffarray;  
+}     
+   
+diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);     
